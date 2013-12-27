@@ -1,0 +1,187 @@
+   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+      <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+body{
+
+  top: 0px;
+  margin: 0.5em 0.1em;
+  padding: 0 auto;
+  font-family : 'Georgia', 'Palatino', 'Palatino Linotype', Times, 'Times New Roman';
+}
+
+
+  #wrapper {
+	max-width: 500px;
+	margin: 0 auto;
+  }
+
+.yazi{
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+
+    background-color:rgb(246, 248, 226);
+    
+    border:1px solid  #66a696;
+
+  	border-right:2px solid #66a696 	;
+	border-top-right-radius:1.5em;
+
+  	border-left:2px solid #66a696;
+	border-bottom-left-radius:1em;
+	padding:1em;
+	margin:0.25em;
+}
+.ayet, .kaynak, .meta {	font-family: Georgia;}
+.ayet, .kaynak, .meta, .kaynak span {color: rgba(69,54,37,0.8);}
+.ayet, .kaynak {
+  font-weight: bold;
+  font-size:0.85em;
+  line-height: 1.8em;
+  font-style: italic;
+  letter-spacing: 0.25em;
+  }
+
+p.ozet, .ayet, .kaynak{
+  border-bottom: 1px solid rgb(213, 207, 167);
+}
+.kaynak span {
+text-transform: capitalize;
+font-style: normal;
+}
+
+p.Gentium {font-family: 'Gentium Book Basic';}
+
+p, li {
+	font-family: 'Georgia', 'Helvetica' ; 
+	/*font-family:Sanchez,serif;*/
+	font-size:1.1em;
+	line-height: 2em;
+	text-align: justify;
+	letter-spacing:0.04em;
+}
+p.ozet{
+		font-family: Georgia;
+		font-style: italic;
+		letter-spacing: 0.1em;
+		color: FireBrick!important;
+	}
+	p.ozet:first-child:first-line{
+		font-weight: bold;
+	}
+h1, h2 {
+	color:  rgb(0, 112, 84);;
+	margin: 5px 0 7px 0;
+	text-align: center;
+	padding-top:7px;
+	font-family: Georgia;
+	/* font-size: 1.8em; */
+	letter-spacing: 0.1em;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.6);}
+td {
+  font-family:Helvetica,Verdana,Arial,sans-serif;
+  font-size:12px;
+  color:#999999;
+  padding:5px;
+  text-align:right;
+}
+
+td>a{
+color:#666666;
+text-decoration : none;
+padding: 1px;
+margin: 1px 2px auto;
+}
+
+table {
+margin: 0 0 0 auto;
+}
+
+a>img {
+position: relative;
+top: 3px;
+}
+a:link, .author{color: #BBBBBB;text-decoration:none;}
+
+.author {
+margin: 0 -1em 0 0 ;
+padding:-10px;
+text-align: right;
+font-size: 0.7em;
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif	;
+width: 50%;
+position: relative;
+right: 9px;
+bottom: 0.2em;
+top:1.5em;
+left: 0em;
+float: right;
+}
+
+    </style>
+    <title>{{ title }}</title>
+	</head>
+  <body>
+
+<div id="wrapper">
+    <h2 style="color: rgb(0, 112, 84); text-align:
+      center; padding-top: 7px; font-family: Georgia; 
+      letter-spacing: 0.1em; text-shadow: rgba(255, 255, 255, 0.6) 1px
+      1px 1px; font-style: normal; font-variant: normal; line-height:
+      normal; orphans: auto; text-indent: 0px; text-transform: none;
+      white-space: normal; widows: auto; word-spacing: 0px;
+      -webkit-text-stroke-width: 0px;">{{ title }}</h2>
+    <div class="yazi" style="-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px
+      0px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 50px inset; box-shadow:
+      rgba(0, 0, 0, 0.2) 0px 0px 5px, rgba(0, 0, 0, 0.0980392) 0px 0px
+      50px inset; background-color: rgb(246, 248, 226); border-width:
+      1px 2px; border-style: solid; border-color: rgb(102, 166, 150);
+      border-top-right-radius: 0.5em; border-bottom-left-radius: 0.1em;
+      padding: 10px; margin: 10px; color: rgb(0, 0, 0); font-family:
+      'Times New Roman'; font-style: normal;
+      font-variant: normal; font-weight: normal; letter-spacing: normal;
+      line-height: normal; orphans: auto; text-align: start;
+      text-indent: 0px; text-transform: none; white-space: normal;
+      widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+      
+      <a href="http://www.mevlanatakvimi.com" style="color: rgb(187, 187, 187); text-decoration: none;"></a>
+      
+{{ metin }}
+
+      <p class="kaynak" style="font-family: Georgia; font-size: 0.85em;
+        line-height: 1.8em; text-align: justify; letter-spacing: 0.25em;
+        color: rgba(69, 54, 37, 0.8); font-weight: bold; font-style:
+        italic; border-bottom-width: 1px; border-bottom-style: solid;
+        border-bottom-color: rgb(213, 207, 167);">{{ tarih }}</p>
+      <br/>
+      <table style="margin: 0px 0px 0px auto;">
+        <tbody>
+          <tr>
+            <td style="font-family: Helvetica, Verdana, Arial,
+              sans-serif; font-size: 12px; color: rgb(153, 153, 153);
+              padding: 5px; text-align: right;"><a title="E-Posta
+                Gönderin" href="mailto:mevlanatakvimi@hotmail.com" style="color: rgb(187, 187, 187);
+                text-decoration: none; padding: 1px; margin: 1px 2px
+                auto;"><span class="Apple-converted-space">Şikayet ve Öneri&nbsp;</span></a><a title="Mevlana Takvimi" href="http://www.mevlanatakvimi.com/" style="color: rgb(187, 187, 187); text-decoration: none;
+                padding: 1px; margin: 1px 2px auto;"><span class="Apple-converted-space">&nbsp;</span>Mevlâna
+                Takvimi Web Sitesi<span class="Apple-converted-space">&nbsp;</span></a><a title="Mevlana Takvim Facebook'ta" href="https://www.facebook.com/mevlanatakvim" style="color: rgb(187, 187, 187);
+                text-decoration: none; padding: 1px; margin: 1px 2px
+                auto;">Facebook<span class="Apple-converted-space">&nbsp;</span></a><a title="Twitter" href="https://twitter.com/mevlanatakvimi" style="color: rgb(187, 187, 187);
+                text-decoration: none; padding: 1px; margin: 1px 2px
+                auto;">Twitter<span class="Apple-converted-space">&nbsp;</span></a><a title="Sohbetler" href="http://www.youtube.com/user/TheFGV1971?feature=watch" style="color: rgb(187, 187, 187);
+                text-decoration: none; padding: 1px; margin: 1px 2px
+                auto;"><span class="Apple-converted-space">&nbsp;</span>Sohbetler</a></td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+      </div>
+
+
+</body>
+</html>

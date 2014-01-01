@@ -9,7 +9,7 @@ logs = codecs.open('_log.log', 'w', 'utf-8')
 def main():
     "docstring for split"""
     from codecs import open
-    yillar = [ y for y in range(1989,1998) if y != 1993 ]
+    yillar = [ y for y in range(1988,1998) if y != 1993 ]
     #for yil in [1989]:
     for yil in yillar:
         total = 0

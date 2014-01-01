@@ -16,6 +16,7 @@ aylar = [u'Ocak',
          u'Kasım',
          u'Aralık']
 
+f = open('_log.log', 'wb', 'utf-8')
 
 def page2filename(page):
     """docstring for page2filename"""

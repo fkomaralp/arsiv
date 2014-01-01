@@ -23,7 +23,7 @@ def page2filename(page):
     page = page.strip('\n').splitlines()
     body = u''''''
     date = page[:1][0]
-    title = page[1::vs2][0]
+    title = page[1:2][0]
     #for row in page[1:]:
     #    body += row
 

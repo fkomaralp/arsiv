@@ -17,10 +17,10 @@ def main():
         year.pop(0)
         for page in year:
             date, title, month, day, mind = page2filename(page)
-            if len(title) == 0 or len(month) == 0 or len(day) == 0:
-                data = u'Yıl: %s Ay: %s\tGün: %s | Başlık: %s' \
-                    %(i, month, day, title )
-                logs.write( data + '\n')
-                print data
+            #if len(title) == 0 or len(month) == 0 or len(day) == 0:
+            data = u'%s |  %s %s \t | %s' \
+                    %(i,day, month, title )
+            logs.write( data + '\n')
+            print data
 if __name__ == '__main__':
     main()

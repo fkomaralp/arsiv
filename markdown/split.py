@@ -15,6 +15,6 @@ def main():
             date, title, month, day, mind = page2filename(page)
             #import ipdb; ipdb.set_trace()
             #if len(title) == 0 or len(month) == 0 or len(day) == 0:
-            print u'Yıl: %s Ay: %s\tGün: %s' %(i, month, day)
+            print u'Yıl: %s Ay: %s\tGün: %s | Başlık: %s' %(i, month, day,title)
 if __name__ == '__main__':
     main()

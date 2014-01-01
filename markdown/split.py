@@ -6,7 +6,8 @@ from libsplit import page2filename
 def main():
     """docstring for split"""
     from codecs import open
-    for i in range(1988, 1989):
+    yillar = [ yil for yil in range(1989,1998) if yil not 1993]
+    for i in yillar:
         f = open('%s.markdown' %i, 'rb', 'utf-8')
         year = f.read().split('---')
         year.pop(0)

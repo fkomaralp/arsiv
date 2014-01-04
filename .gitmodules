@@ -1,0 +1,3 @@
+[submodule "markdown/drupal"]
+	path = markdown/drupal
+	url = git@github.com:guneysus/python_drupal_services.git

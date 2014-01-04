@@ -11,6 +11,8 @@ from drupal.services import *
 from drupal.config import config
 from drupal.interface import node
 
+dp = DrupalServices(config)
+
 def main():
     "docstring for split"""
     yillar = [ y for y in range(1988,1998) if y != 1993 ]
@@ -27,7 +29,6 @@ def main():
             for row in dump[1:]:
                 body += row
             title = dump[0].strip('#').strip()
-            #print yil,ay,gun,title
             new_node = node(year = yil, month = ay, day =gun,
                     title = title,
                     body = body
@@ -35,9 +36,10 @@ def main():
 
             if title == '':
                 print '%s/%s-%s.markdown' %(yil, ay,gun)
-            #dp = DrupalServices(config)
-            
-            #dp.call('node.create', new_node)
+            try:
+                #dp.call('node.create', new_node)
+            except:
+                print 'Error on %s/%s-%s.markdown' % (yil, ay, gun)
 
 if __name__ == '__main__':
     main()

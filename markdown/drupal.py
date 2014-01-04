@@ -37,7 +37,7 @@ def main():
             if title == '':
                 print '%s/%s-%s.markdown' %(yil, ay,gun)
             try:
-                #dp.call('node.create', new_node)
+                dp.call('node.create', new_node)
             except:
                 print 'Error on %s/%s-%s.markdown' % (yil, ay, gun)
 
